@@ -198,3 +198,45 @@ buildWhatsAppLink({ phone, name, level, score, total, programTitle })
 - **Mikro-interaksi**: hover lift tombol/kartu, spring physics Framer Motion, transisi geser antar soal, gerakan staggered, ring skor animasi, dan tombol scroll ke form.
 - **Aksesibilitas**: fokus ring `focus-visible`, `aria-pressed` pada opsi, kontras WCAG AA.
 - **Responsif**: `flex/grid` adaptif, navigasi soal collapse, sticky submit bar di mobile.
+
+---
+
+## 📝 Dokumentasi Penggunaan AI
+
+> Sesuai ketentuan seleksi, seluruh prompt yang digunakan bersama AI dicantumkan di dokumentasi ini.
+
+Proses pengerjaan proyek ini **sebagian besar dilakukan secara manual** — arsitektur, struktur komponen modular, logika bisnis (scoring, level, auto-save, validasi, WhatsApp link), styling Tailwind, serta penulisan kode secara keseluruhan dikerjakan langsung. Penggunaan AI hanya untuk **penyesuaian kecil** dan **debug bug** selama iterasi, dengan prompt ringkas seperti berikut:
+
+**Iterasi bantuan (ringkasan):**
+- "Atur ulang seksi kelengkapan proyek pada README agar rapi sesuai ketentuan seleksi."
+- "Koreksi error kecil di quiz page: variabel terbaca undefined pada teks loading — perbaiki agar pakai nilai dari context."
+- "Lebarkan layout versi desktop agar lebih proporsional di layar lebar tanpa mengubah tampilan mobile."
+- "Perbaiki tombol 'Beranda' di halaman hasil agar kembali ke halaman awal yang benar-benar kosong (reset profil juga)."
+
+Semua keputusan fungsional dan desain tetap ditentukan secara pribadi.
+
+---
+
+## 🧪 Pengujian
+
+Fungsionalitas divalidasi dengan automation **Playwright**:
+
+- ✅ Validasi form biodata (error muncul saat kosong)
+- ✅ Navigasi ke `/test` setelah submit
+- ✅ Render soal & navigasi antar soal
+- ✅ Auto-advance & progress 100% setelah semua terjawab
+- ✅ Modal konfirmasi submit
+- ✅ Hasil: header, skor, level, seksi rekomendasi
+- ✅ CTA WhatsApp (ter-normalisasi + pesan ter-generate)
+- ✅ Persistensi `localStorage` (answers, user, submitted)
+- ✅ Tombol "Beranda" reset penuh ke halaman awal
+
+---
+
+## 📄 Lisensi
+
+Proyek ini dibuat untuk keperluan seleksi Front-end Developer. Silakan digunakan sebagai referensi belajar.
+
+---
+
+*Dibuat dengan ☕, React, dan Tailwind CSS.*
