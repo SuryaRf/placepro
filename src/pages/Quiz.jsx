@@ -137,7 +137,7 @@ function Quiz() {
   return (
     <>
       <Background />
-      <div className="noise relative mx-auto flex min-h-svh max-w-6xl flex-col px-5 pb-12 sm:px-8">
+      <div className="noise relative mx-auto flex min-h-svh max-w-7xl flex-col px-5 pb-12 sm:px-8">
         {/* Top bar */}
         <header className="flex items-center justify-between py-5">
           <Logo />

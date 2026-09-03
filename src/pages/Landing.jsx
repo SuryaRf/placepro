@@ -119,7 +119,7 @@ function Landing() {
   return (
     <>
       <Background />
-      <div className="noise relative mx-auto flex min-h-svh max-w-6xl flex-col px-5 pb-16 sm:px-8">
+      <div className="noise relative mx-auto flex min-h-svh max-w-7xl flex-col px-5 pb-16 sm:px-8">
         {/* Header */}
         <motion.header
           initial={{ opacity: 0, y: -16 }}
@@ -150,7 +150,7 @@ function Landing() {
           className="grid gap-12 pb-12 pt-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start lg:gap-16 lg:pt-14"
         >
           {/* Left copy */}
-          <motion.div variants={item} className="max-w-xl">
+          <motion.div variants={item} className="max-w-2xl">
             <motion.h1
               variants={item}
               className="font-display mt-6 text-5xl font-semibold leading-[1.05] tracking-tight text-ink-950 sm:text-6xl"

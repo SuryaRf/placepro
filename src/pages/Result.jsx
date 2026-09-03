@@ -81,7 +81,7 @@ function Result() {
   return (
     <>
       <Background />
-      <div className="noise mx-auto min-h-svh max-w-4xl px-5 pb-16 sm:px-8">
+      <div className="noise mx-auto min-h-svh max-w-5xl px-5 pb-16 sm:px-8">
         <header className="flex items-center justify-between py-5">
           <Logo />
           <Button
