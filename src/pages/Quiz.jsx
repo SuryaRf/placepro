@@ -80,19 +80,54 @@ function Quiz() {
         <div className="noise flex min-h-svh flex-col items-center justify-center px-6">
           <Logo className="mb-8" />
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ type: 'spring', stiffness: 80, damping: 16 }}
             className="flex flex-col items-center"
           >
-            <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ repeat: Infinity, duration: 1.1, ease: 'linear' }}
-              className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl border border-moss-200 bg-moss-50 text-moss-600"
-            >
-              <Icon name="refresh" size={26} />
-            </motion.div>
+            <div className="relative mb-8 flex h-16 w-16 items-center justify-center">
+              {/* slow rotating dashed ring */}
+              <motion.span
+                animate={{ rotate: 360 }}
+                transition={{ repeat: Infinity, duration: 7, ease: 'linear' }}
+                className="absolute inset-0 rounded-full border-2 border-dashed border-moss-300/60"
+              />
+              {/* segment progress ring */}
+              <svg className="absolute inset-0 -rotate-90" viewBox="0 0 64 64" aria-hidden="true">
+                <circle cx="32" cy="32" r="27" fill="none" strokeWidth="3" className="stroke-moss-200/50" />
+                <motion.circle
+                  cx="32" cy="32" r="27" fill="none" strokeWidth="3" strokeLinecap="round"
+                  className="stroke-moss-600"
+                  initial={{ pathLength: 0 }}
+                  animate={{ pathLength: 1 }}
+                  transition={{ repeat: Infinity, duration: 1.6, ease: 'easeInOut' }}
+                />
+              </svg>
+              {/* bouncing icon */}
+              <motion.div
+                animate={{ y: [0, -6, 0] }}
+                transition={{ repeat: Infinity, duration: 1.4, ease: 'easeInOut' }}
+                className="flex h-11 w-11 items-center justify-center rounded-2xl bg-moss-800 text-paper-50"
+              >
+                <Icon name="laptop" size={22} strokeWidth={1.9} />
+              </motion.div>
+            </div>
+
             <h1 className="text-lg font-semibold text-ink-900">Menyiapkan soal ujian…</h1>
-            <p className="mt-1 text-sm text-ink-600">Sebentar lagi, kamu akan mulai.</p>
+            <motion.p className="mt-1 text-sm text-ink-600">
+              Terdapat {QUESTIONS.length} soal. Selamat mengerjakan!
+            </motion.p>
+
+            <div className="mt-6 flex items-center gap-1.5">
+              {[0, 1, 2].map((i) => (
+                <motion.span
+                  key={i}
+                  className="h-2 w-2 rounded-full bg-moss-500"
+                  animate={{ opacity: [0.2, 1, 0.2], scale: [0.8, 1.1, 0.8] }}
+                  transition={{ repeat: Infinity, duration: 1.2, delay: i * 0.18, ease: 'easeInOut' }}
+                />
+              ))}
+            </div>
           </motion.div>
         </div>
       </>
