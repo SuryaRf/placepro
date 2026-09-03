@@ -31,13 +31,17 @@ const LEVEL_META = {
 
 function Result() {
   const navigate = useNavigate()
-  const { user, answers, resetTest } = useQuiz()
+  const { user, answers, resetTest, resetAll } = useQuiz()
 
   const [ready, setReady] = useState(false)
 
-  // Guard: no user or not everything answered -> back to start.
+  // Guard: no profile -> landing; profile but unfinished -> back to test.
   useEffect(() => {
-    if (!user?.name || Object.keys(answers).length < QUESTIONS.length) {
+    if (!user?.name) {
+      navigate('/', { replace: true })
+      return
+    }
+    if (Object.keys(answers).length < QUESTIONS.length) {
       navigate('/test', { replace: true })
       return
     }
@@ -88,7 +92,7 @@ function Result() {
             variant="ghost"
             size="sm"
             onClick={() => {
-              resetTest()
+              resetAll()
               navigate('/')
             }}
           >

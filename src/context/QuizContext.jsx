@@ -60,6 +60,15 @@ export function QuizProvider({ children }) {
     storage.clearTestProgress()
   }, [])
 
+  /** Full reset: clear test progress AND the user profile for a fresh start. */
+  const resetAll = useCallback(() => {
+    setAnswers({})
+    setCurrentIndex(0)
+    setUser(null)
+    storage.remove(storage.keys.user)
+    storage.clearTestProgress()
+  }, [])
+
   const value = useMemo(
     () => ({
       questions: QUESTIONS,
@@ -72,8 +81,9 @@ export function QuizProvider({ children }) {
       goNext,
       goPrev,
       resetTest,
+      resetAll,
     }),
-    [user, answers, currentIndex, setUserProfile, selectAnswer, goTo, goNext, goPrev, resetTest]
+    [user, answers, currentIndex, setUserProfile, selectAnswer, goTo, goNext, goPrev, resetTest, resetAll]
   )
 
   return <QuizContext.Provider value={value}>{children}</QuizContext.Provider>
