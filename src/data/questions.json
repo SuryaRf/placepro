@@ -1,0 +1,234 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "prompt": "\"She ___ to school every day.\"",
+      "options": [
+        { "key": "A", "text": "go" },
+        { "key": "B", "text": "goes" },
+        { "key": "C", "text": "going" },
+        { "key": "D", "text": "gone" }
+      ],
+      "answer": "B",
+      "difficulty": "easy",
+      "category": "Grammar — Present Simple"
+    },
+    {
+      "id": 2,
+      "prompt": "\"There aren't ___ apples left in the basket.\"",
+      "options": [
+        { "key": "A", "text": "some" },
+        { "key": "B", "text": "any" },
+        { "key": "C", "text": "much" },
+        { "key": "D", "text": "a" }
+      ],
+      "answer": "B",
+      "difficulty": "easy",
+      "category": "Grammar — Quantifiers"
+    },
+    {
+      "id": 3,
+      "prompt": "\"If it rains tomorrow, we ___ the picnic.\"",
+      "options": [
+        { "key": "A", "text": "cancel" },
+        { "key": "B", "text": "will cancel" },
+        { "key": "C", "text": "would cancel" },
+        { "key": "D", "text": "cancelled" }
+      ],
+      "answer": "B",
+      "difficulty": "easy",
+      "category": "Grammar — First Conditional"
+    },
+    {
+      "id": 4,
+      "prompt": "\"Choose the correct word: The team ___ working hard this month.\"",
+      "options": [
+        { "key": "A", "text": "is" },
+        { "key": "B", "text": "are" },
+        { "key": "C", "text": "am" },
+        { "key": "D", "text": "been" }
+      ],
+      "answer": "A",
+      "difficulty": "easy",
+      "category": "Grammar — Subject-Verb Agreement"
+    },
+    {
+      "id": 5,
+      "prompt": "\"I have lived in Jakarta ___ 2015.\"",
+      "options": [
+        { "key": "A", "text": "for" },
+        { "key": "B", "text": "since" },
+        { "key": "C", "text": "from" },
+        { "key": "D", "text": "during" }
+      ],
+      "answer": "B",
+      "difficulty": "easy",
+      "category": "Grammar — Prepositions of Time"
+    },
+    {
+      "id": 6,
+      "prompt": "\"By the time you arrive, I ___ for two hours.\"",
+      "options": [
+        { "key": "A", "text": "will wait" },
+        { "key": "B", "text": "will have waited" },
+        { "key": "C", "text": "have waited" },
+        { "key": "D", "text": "wait" }
+      ],
+      "answer": "B",
+      "difficulty": "medium",
+      "category": "Grammar — Future Perfect"
+    },
+    {
+      "id": 7,
+      "prompt": "\"The report ___ by the team before the meeting started.\"",
+      "options": [
+        { "key": "A", "text": "was prepared" },
+        { "key": "B", "text": "is prepared" },
+        { "key": "C", "text": "has prepared" },
+        { "key": "D", "text": "prepared" }
+      ],
+      "answer": "A",
+      "difficulty": "medium",
+      "category": "Grammar — Passive Voice"
+    },
+    {
+      "id": 8,
+      "prompt": "\"She suggested that he ___ the earlier train.\"",
+      "options": [
+        { "key": "A", "text": "take" },
+        { "key": "B", "text": "takes" },
+        { "key": "C", "text": "took" },
+        { "key": "D", "text": "taking" }
+      ],
+      "answer": "A",
+      "difficulty": "medium",
+      "category": "Grammar — Subjunctive"
+    },
+    {
+      "id": 9,
+      "prompt": "Which sentence is grammatically correct?",
+      "options": [
+        { "key": "A", "text": "Me and John are going to the store." },
+        { "key": "B", "text": "John and I are going to the store." },
+        { "key": "C", "text": "John and me are going to the store." },
+        { "key": "D", "text": "I and John is going to the store." }
+      ],
+      "answer": "B",
+      "difficulty": "medium",
+      "category": "Grammar — Pronouns"
+    },
+    {
+      "id": 10,
+      "prompt": "\"Despite ___ very tired, he finished the marathon.\"",
+      "options": [
+        { "key": "A", "text": "to be" },
+        { "key": "B", "text": "being" },
+        { "key": "C", "text": "be" },
+        { "key": "D", "text": "been" }
+      ],
+      "answer": "B",
+      "difficulty": "medium",
+      "category": "Grammar — Gerunds"
+    },
+    {
+      "id": 11,
+      "prompt": "\"The effects of the new policy ___ yet.\"",
+      "options": [
+        { "key": "A", "text": "has not been evaluated" },
+        { "key": "B", "text": "have not been evaluated" },
+        { "key": "C", "text": "is not evaluated" },
+        { "key": "D", "text": "have not evaluate" }
+      ],
+      "answer": "B",
+      "difficulty": "hard",
+      "category": "Grammar — Subject-Verb + Passive"
+    },
+    {
+      "id": 12,
+      "prompt": "\"Not only ___ the exam, but she also scored the highest.\"",
+      "options": [
+        { "key": "A", "text": "she passed" },
+        { "key": "B", "text": "did she pass" },
+        { "key": "C", "text": "she did pass" },
+        { "key": "D", "text": "passing she" }
+      ],
+      "answer": "B",
+      "difficulty": "hard",
+      "category": "Grammar — Inversion"
+    },
+    {
+      "id": 13,
+      "prompt": "\"The company's revenue has grown ___ since the rebranding.\"",
+      "options": [
+        { "key": "A", "text": "dramatic" },
+        { "key": "B", "text": "dramatically" },
+        { "key": "C", "text": "dramatize" },
+        { "key": "D", "text": "dramatized" }
+      ],
+      "answer": "B",
+      "difficulty": "hard",
+      "category": "Vocabulary — Adverbs"
+    },
+    {
+      "id": 14,
+      "prompt": "Which is the closest meaning of the word \"elucidate\"?",
+      "options": [
+        { "key": "A", "text": "to confuse" },
+        { "key": "B", "text": "to clarify" },
+        { "key": "C", "text": "to ignore" },
+        { "key": "D", "text": "to destroy" }
+      ],
+      "answer": "B",
+      "difficulty": "hard",
+      "category": "Vocabulary — Synonyms"
+    },
+    {
+      "id": 15,
+      "prompt": "\"Had I known earlier, I ___ a different approach.\"",
+      "options": [
+        { "key": "A", "text": "would take" },
+        { "key": "B", "text": "would have taken" },
+        { "key": "C", "text": "took" },
+        { "key": "D", "text": "will take" }
+      ],
+      "answer": "B",
+      "difficulty": "hard",
+      "category": "Grammar — Third Conditional"
+    }
+  ],
+  "programs": {
+    "beginner": {
+      "id": "beginner",
+      "label": "Beginner",
+      "title": "Foundations of English",
+      "duration": "12 minggu · 3x/minggu",
+      "description": "Mulai dari dasar — percakapan sehari-hari, kosakata inti, dan tata bahasa fundamental untuk membangun kepercayaan diri berbicara.",
+      "goals": ["Daily conversation vocabulary", "Basic grammar structures", "Listening & pronunciation basics"],
+      "accent": "sun",
+      "icon": "seed",
+      "modules": ["Module 1 · Greetings & Introductions", "Module 2 · Everyday Vocabulary", "Module 3 · Simple Sentences"]
+    },
+    "intermediate": {
+      "id": "intermediate",
+      "label": "Intermediate",
+      "title": "Conversational Confidence",
+      "duration": "10 minggu · 3x/minggu",
+      "description": "Perkuat kemampuan komunikasi aktif — menyampaikan ide, berdebat ringan, dan menulis dengan struktur yang lebih matang.",
+      "goals": ["Fluent everyday conversations", "Vocational & workplace English", "Reading comprehension"],
+      "accent": "moss",
+      "icon": "compass",
+      "modules": ["Module 1 · Debating & Opinions", "Module 2 · Workplace Communication", "Module 3 · Structured Writing"]
+    },
+    "advanced": {
+      "id": "advanced",
+      "label": "Advanced",
+      "title": "Professional Fluency",
+      "duration": "8 minggu · 2x/minggu",
+      "description": "Asah kefasihan tingkat profesional — presentasi, negoisasi, dan penulisan akademis/bisnis dengan nuansa yang presisi.",
+      "goals": ["Presentation & public speaking", "Academic & business writing", "Nuanced idiomatic expression"],
+      "accent": "ink",
+      "icon": "spark",
+      "modules": ["Module 1 · Persuasive Speaking", "Module 2 · Advanced Writing", "Module 3 · Mastery & Nuance"]
+    }
+  }
+}

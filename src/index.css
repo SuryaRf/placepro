@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", "Plus Jakarta Sans", ui-sans-serif, sans-serif;
+
+  /* Brand palette — deep ink, warm paper, emerald accent */
+  --color-ink-950: #0a0f0d;
+  --color-ink-900: #101814;
+  --color-ink-800: #1b2721;
+  --color-ink-700: #2c3b33;
+  --color-ink-600: #3f5248;
+  --color-ink-500: #5c7366;
+
+  --color-paper-50: #fafaf7;
+  --color-paper-100: #f3f3ec;
+  --color-paper-200: #e9e9de;
+
+  --color-moss-50: #eef6f0;
+  --color-moss-100: #d9eade;
+  --color-moss-200: #b5d5c0;
+  --color-moss-300: #8cb9a0;
+  --color-moss-400: #5f9a7d;
+  --color-moss-500: #3f7d60;
+  --color-moss-600: #2f644a;
+  --color-moss-700: #27503d;
+  --color-moss-800: #214032;
+  --color-moss-900: #1c362a;
+
+  --color-sun-100: #fdeece;
+  --color-sun-300: #f7cf7e;
+  --color-sun-400: #f0b84f;
+  --color-sun-500: #e8a12a;
+
+  --shadow-soft: 0 20px 50px -20px rgba(16, 24, 20, 0.18);
+  --shadow-card: 0 1px 2px rgba(16, 24, 20, 0.06), 0 12px 32px -16px rgba(16, 24, 20, 0.14);
+  --shadow-float: 0 30px 60px -25px rgba(16, 24, 20, 0.28);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-paper-50);
+  color: var(--color-ink-900);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+/* Subtle grain / paper texture overlay */
+.noise::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(16, 24, 20, 0.035) 1px, transparent 1px);
+  background-size: 24px 24px;
+  z-index: 50;
+  opacity: 0.5;
+}
+
+::selection {
+  background: var(--color-moss-200);
+  color: var(--color-ink-950);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-paper-200);
+  border-radius: 999px;
+  border: 2px solid var(--color-paper-50);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-moss-200);
+}
