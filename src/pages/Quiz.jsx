@@ -115,7 +115,7 @@ function Quiz() {
 
             <h1 className="text-lg font-semibold text-ink-900">Menyiapkan soal ujian…</h1>
             <motion.p className="mt-1 text-sm text-ink-600">
-              Terdapat {QUESTIONS.length} soal. Selamat mengerjakan!
+              Terdapat {total} soal. Selamat mengerjakan!
             </motion.p>
 
             <div className="mt-6 flex items-center gap-1.5">
