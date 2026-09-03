@@ -7,7 +7,7 @@
 | | Tautan |
 |---|---|
 | **📦 Repositori GitHub** | https://github.com/SuryaRf/placepro |
-| **🌐 Live Deployment** | `https://your-live-deployment.vercel.app` *(isi setelah deploy)* |
+| **🌐 Live Deployment** | https://placepro-iota.vercel.app |
 
 ---
 
@@ -46,8 +46,8 @@ PlacePro adalah aplikasi web **Single Page Application (SPA)** yang memandu calo
 
 ```bash
 # 1. Clone repositori
-git clone https://github.com/your-username/studycase_fe.git
-cd studycase_fe
+git clone https://github.com/SuryaRf/placepro.git
+cd placepro
 
 # 2. Install dependensi
 npm install
